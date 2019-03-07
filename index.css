@@ -1,0 +1,135 @@
+/* 顶部新增轮播 */
+.banner2{
+	width:100%; 
+	position:relative;
+}
+
+.banner2 .ban-bd2{
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+.banner2 .ban-bd2 li{
+	width:100%;
+	overflow:hidden;
+	position: relative;
+}
+.banner2 .ban-bd2 li img{
+	width: 100%;
+	display: block;
+}
+.banner2 .ban-hd2{
+	width: 100%;
+	position:absolute;
+	bottom:5%;
+	text-align: center;
+}
+.banner2 .ban-hd2 a{
+	width: 1.5em;
+	height: 5px;
+	margin: 0 2.5px;
+	display: inline-block;
+	background: rgba(255,255,255,.5);
+}
+.banner2 .ban-hd2 .on{
+	background: rgba(255,255,255,1);
+}
+
+
+/* 产品中心 */
+.big-title{
+	padding: 0 4.167%;
+	font-size: 1em;
+	line-height: 3.5em;
+	color: #212121;
+	overflow: hidden;
+}
+.big-title span{
+	float: left;
+}
+.big-title .more{
+	float: right;
+	width: 10%;
+	text-align: right;
+}
+.big-title .more a{
+	display: block;
+}
+.big-title .more img{
+	width: 0.375em;
+}
+
+/* 轮播图 */
+.banner1{
+	padding-left: 3%;
+}
+
+.banner1 .swiper-slide{
+	width: 33%;
+}
+.banner1 .swiper-slide:first-child{
+	
+}
+.banner1 .swiper-slide:last-child{
+	margin-right: 5%;
+}
+
+.banner1 img{
+	width: 100%;
+}
+
+/* 新闻中心 */
+.news-center{
+
+}
+.news-center .list{
+	background: #fff;
+	padding: 0 4.167%;
+}
+.news-center .list li{
+	border-bottom: 1px solid #e0e0e0;
+	padding: 1.45em 0;
+	background: url(link-icon.png)/*tpa=/images/link-icon.png*/ no-repeat right bottom 1.5em;
+	background-size: 1.3125em;
+}
+.news-center .list li:last-child{
+	border-bottom: none;
+}
+.news-center .list .name{
+	color: #333333;
+	font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;	
+}
+.news-center .list .detail{
+	color: #999999;
+	font-size: 0.875em;
+	margin-top: 0.2em;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10%;
+}
+
+/* 应用领域 */
+.apply-center{
+
+}
+.apply-center .imgs img{
+	width: 100%;
+}
+
+/* 工程案例 */
+.project-center{
+	
+}
+.project-center .imgs img{
+	width: 100%;
+}
+
+
+
+
+

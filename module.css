@@ -1,0 +1,474 @@
+body{
+  font-size: 16px;
+  min-height: 100%;
+  font-family: "微软雅黑";
+  background: #f5f5f5;
+  overflow-y:scroll;
+  max-width: 640px;
+  margin: auto;
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* 去除Chrome等浏览器文本框默认发光边框 */
+input:focus, textarea:focus {outline: none;}
+a:active,a:focus {outline: none;star:expression(this.onFocus=this.blur());}
+
+em,i{
+  font-style: normal;
+}
+
+/* 字体设置 */
+@media screen and (max-width: 1024px) {
+  body {
+    font-family: "华文细黑";
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+@media screen and (max-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-family: "华文细黑";
+  }
+}
+
+input,
+select,
+textarea {
+  font-family: "微软雅黑";
+}
+
+@media screen and (max-width: 1024px) {
+  input,
+  select,
+  textarea {
+    font-family: "华文细黑";
+  }
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.wrap {
+  width: 100%;
+  min-height: 736px;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 375px) {
+  .wrap {
+    min-height: 667px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrap {
+    min-height:568px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.row {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* 右侧导航 */
+.nav-box{
+  position:fixed;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(nav-boxbg.png)/*tpa=http://m.chinazhijiang.com/images/nav-boxbg.png*/;
+  z-index: 100;
+}
+
+.nav-mian{
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  float:right;
+  overflow-y:scroll;
+}
+.nav-top{
+  padding: 0 5%;
+  background: #1150a8;
+  color: #fff;
+  overflow: hidden;
+  line-height: 4.0625em;
+}
+.nav-top .left{
+  float: left;
+  font-size: 1.125em;
+}
+.nav-top .left a{
+  color: #fff;
+  display: block;
+}
+.nav-top .left img{
+  width: 1.278em;
+  margin-top: -5px;
+  margin-right: 0.5em;
+}
+.nav-top .closes{
+  float: right;
+}
+.nav-top .closes img{
+  width: 1.375em;
+} 
+
+/* 导航列表开始 */
+.nav-list{
+  background: #fff;
+}
+
+.nav-list .lv1{
+  padding: 0 5%;
+  font-size: 1.125em;
+  color: #212121;
+  line-height: 2.889em;
+  background: url(xia-icon.png)/*tpa=http://m.chinazhijiang.com/images/xia-icon.png*/ no-repeat right 5% center;
+  background-size: 0.944em;
+  display: block;
+}
+.nav-list .lv1.on{
+  background: url(shang-icon.png)/*tpa=http://m.chinazhijiang.com/images/shang-icon.png*/ no-repeat right 5% center;
+  background-size: 0.944em;
+}
+.nav-list .lv1.link{
+    background: url(you-icon.png)/*tpa=http://m.chinazhijiang.com/images/you-icon.png*/ no-repeat right 5% center;
+    background-size: 0.5em;
+}
+
+.nav-lv2{
+  background: #3c3c3c;
+  display: none;
+}
+.nav-lv2 .lv2-box{
+  position: relative;
+}
+.nav-list .lv2{
+  display: block;
+  padding: 0 6%;
+  padding-right: 0;
+  color: #b0b0b0;
+  font-size: 1em;
+  line-height: 3em;
+}
+.nav-list .lv2.link{
+  
+}
+
+.nav-list .lv2-box .dian{
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width:30%;
+  height: 100%;
+  background: url(jia-icon.png)/*tpa=http://m.chinazhijiang.com/images/jia-icon.png*/ no-repeat right 21% center;
+  background-size: 0.75em;
+  z-index: 100;
+  display: inline-block;
+}
+.nav-list .lv2-box .dian.on{
+  background: url(jian-icon.png)/*tpa=http://m.chinazhijiang.com/images/jian-icon.png*/ no-repeat right 21% center;
+  background-size: 0.75em;
+}
+
+.nav-lv3{
+  background: #000000;
+  display: none;
+}
+
+.nav-list .lv3{
+  color: #eeeeee;
+  font-size: 0.875em;
+  padding-left: 13%;
+  line-height: 3.214em;
+  display: block;
+  background: url(jia-icon.png)/*tpa=http://m.chinazhijiang.com/images/jia-icon.png*/ no-repeat left 8% center;
+  background-size: 0.714em;
+}
+.nav-list .lv3.on{
+  background: url(jian-icon.png)/*tpa=http://m.chinazhijiang.com/images/jian-icon.png*/ no-repeat left 8% center;
+  background-size: 0.714em;
+}
+
+.nav-lv4{
+  border-bottom: 2px solid #333333;
+  display: none;
+}
+.nav-list .lv4{
+  color: #888888;
+  font-size: 0.875em;
+  display: block;
+  line-height: 2.286em;
+}
+.nav-list .nav-lv4.a{
+   border-bottom: 2px solid red;
+}
+
+.nav-list .lv4-box{
+  position: relative;
+  padding-left: 13%;
+}
+.nav-list .lv4-box .dian1{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 30%;
+    height: 100%;
+    background: url(jia-icon.png)/*tpa=http://m.chinazhijiang.com/images/jia-icon.png*/ no-repeat right 21% center;
+    background-size: 0.75em;
+    z-index: 100;
+    display: inline-block;
+}
+.nav-list .lv4-box .dian1.on{
+    background: url(jian-icon.png)/*tpa=http://m.chinazhijiang.com/images/jian-icon.png*/ no-repeat right 21% center;
+    background-size: 0.75em;
+}
+.nav-lv5{
+  padding-left: 20%;
+  display: none;
+}
+
+.nav-list .lv5{
+    color: #888888;
+    font-size: 0.875em;
+    display: block;
+    line-height: 2.3em;
+}
+
+/* 头部 */
+.header-box{
+  background: rgba(255,255,255,.8);
+  line-height: 65px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  padding: 0 4.167%;
+  text-align: center;
+}
+.header-box .search{
+  float: left;
+}
+.header-box .search img{
+  width: 1.5625em;
+}
+.header-box .search .img2{
+  display: none;
+}
+
+.header-box .nav-btn{
+  float: right;
+}
+.header-box .nav-btn img{
+  width: 1.625em;
+}
+.header-box .logo{
+  width: 9.375em;
+}
+
+/* 搜索框 */
+.search-box{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 64.5px;
+  background: #ffffff;
+  height: 100%;
+  z-index: 49;
+  display: none;
+}
+.search-mian{
+  background: #f0f0f0;
+  border-top: 2px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+  padding: 2.25em 4.167%;
+  box-shadow: 0px 2px 2px #e0e0e0 inset;
+}
+.search-mian .input-box{
+  background: #ffffff;
+  border: 3px solid #f9c201;
+  overflow: hidden;
+  background: #f9c201;
+}
+
+.search-mian .input-box input{
+  float: left;
+  width:87%;
+  border: none;
+  background:#fff;
+  font-size: 1em;
+  color: #666666;
+  line-height: 2.6875em;
+  padding: 0 5%;
+}
+.search-mian .input-box a{
+  float: left;
+  width: 13%;
+  display: block;
+  font-size: 1em;
+  line-height: 2.6875em;
+  height: 2.6875em;
+  background: url(sou-iconbg.png)/*tpa=http://m.chinazhijiang.com/images/sou-iconbg.png*/ no-repeat center center;
+  background-size: 1.5em;
+  background-color: #f9c201;
+
+}
+
+
+/* 主体区域 */
+.main-box{
+  position: relative;
+  min-height: 500px;
+}
+
+/* 焦点图 */
+.big-banner{
+  
+}
+.big-banner img{
+  width: 100%;
+}
+
+
+/* 底部 */
+.footer-box{
+  margin-top: 1.4375em;
+  background: #fff;
+  padding-bottom: 2em;
+}
+.footer-box .logo{
+  border-bottom: 2px solid #e0e0e0;
+  margin: 0 4.167%;
+}
+.footer-box .logo img{
+  width: 100%
+}
+.footer-box .link{
+  padding: 0 4.167%;
+  padding-top: 1.2em;
+  position: relative;
+}
+.footer-box .link:after{
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.link-left{
+  float: left;
+  font-size: 0.8125em;
+  color: #6c6c6c;
+  line-height:2.231em;
+  border: 2px solid #dedede;
+  padding-left: 3%;
+  border-radius: 3px;
+  width: 7.538em;
+  background: url(select-bg.png)/*tpa=http://m.chinazhijiang.com/images/select-bg.png*/ no-repeat right 10% center;
+  background-size: 0.923em;
+}
+
+.link-pop{
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  background: #fff;
+  border-top: 2px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  padding: 0.7em 7.5%;
+  display: none;
+}
+.link-pop li a{
+  display: block;
+  color: #666666;
+  font-size: 0.8125em;
+  line-height: 2.154em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.footer-box .link1{
+  color: #7c7c7c;
+  font-size: 0.8125em;
+  margin-top: 1em;
+  padding: 0 4.167%;
+}
+
+.footer-box .link1 a{
+   color: #7c7c7c;
+}
+
+.footer-box .link2{
+  color: #7c7c7c;
+  font-size: 0.75em;
+  margin-top: 0.8em;
+  padding: 0 4.167%;
+}
+.footer-box .link2 a{
+  color: #7c7c7c;
+}
+
+.nogun{
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 返回顶部 */
+.back-top {
+    position: fixed;
+    right: 4.167%;
+    bottom: 10%;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    z-index: 1000;
+    display: none;
+    z-index: 50;
+}
+.back-top img{
+  width: 100%;
+}
